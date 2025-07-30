@@ -1,0 +1,29 @@
+.shopping-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.heading {
+  color: green;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 4px double black; /* Double border */
+  width: 300px;
+  font-family: Arial, sans-serif;
+  color: green; /* Make all text green */
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
