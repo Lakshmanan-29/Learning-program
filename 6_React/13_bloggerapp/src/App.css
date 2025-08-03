@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header nav button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.app-header nav button:hover {
+  background-color: #e0e0e0;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  gap: 20px; /* Adds space between the columns */
+}
+
+/* Styles for each column */
+.details-container > div {
+  width: 30%;
+  padding: 0 20px;
+  border-left: 2px solid green;
+}
+
+.details-container > div:first-child {
+  border-left: none; /* Removes the border from the first column */
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.explanation {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+}
