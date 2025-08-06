@@ -1,19 +1,23 @@
 import React from 'react';
 
-function BookDetails({ books }) {
-  return (
-    <div>
+const BookDetails = ({ visible }) => (
+  visible && (
+    <div className="column">
       <h2>Book Details</h2>
-      {/* This uses the .map() function to render a list [cite: 7] */}
-      {books.map((book) => (
-        // Using a key is essential for lists in React [cite: 5]
-        <div key={book.id}>
-          <h3>{book.bname}</h3>
-          <h4>{book.price}</h4>
-        </div>
-      ))}
+      <div>
+        <strong>Master React</strong>
+        <p>670</p>
+      </div>
+      <div>
+        <strong>Deep Dive into Angular 11</strong>
+        <p>800</p>
+      </div>
+      <div>
+        <strong>Mongo Essentials</strong>
+        <p>450</p>
+      </div>
     </div>
-  );
-}
+  )
+);
 
 export default BookDetails;
